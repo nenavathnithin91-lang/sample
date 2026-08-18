@@ -11,13 +11,13 @@ pipeline {
 
         stage('Compile') {
             steps {
-                sh 'gcc helloworld.c -o HelloWorld'
+                sh 'gcc addition.c -o addition'
             }
         }
 
         stage('Run') {
             steps {
-                sh './HelloWorld'
+                sh './addition'
             }
         }
     }
